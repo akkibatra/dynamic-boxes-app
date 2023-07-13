@@ -20,7 +20,7 @@ function Login({ onLogin, isLoggedIn }) {
     event.preventDefault();
     if (username && password) {
       onLogin();
-      navigate(location.state?.from || '/');
+      navigate(location.state || "/");
     }
   };
 
